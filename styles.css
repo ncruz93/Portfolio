@@ -110,7 +110,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: 0 10vw;
-  background-image: linear-gradient(black, red);
+  background: antiquewhite
 }
 
 img {
@@ -171,7 +171,6 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: maroon;
 }
 
 h1,
