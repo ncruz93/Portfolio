@@ -1,53 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>My dogs!</title>
-        
-    </head>
-    <body>
-        <nav>
-            <ul> Other pages:
-                <li><a href="index.html">Home Page</a></li>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My dogs!</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js" type="module"></script>
+</head>
+
+<body>
+    <div id="app" style="color: white">
+        HEY {{ message }}
+    </div>
+    <nav id="navBar">
+        <ul> Other pages:
+            <li v-for="item in items">
+                {{ item.link }}
+            </li>
+            <!-- <li><a href="index.html">Home Page</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="hobbies.html">Hobbies Page</a></li>
                 <li><a href="bio.html">Bio</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav> 
-        <main>
-            <h1>Say hello to Luna and Suvi!</h1>
-            <img src="Images/Suvi_Luna.jpg", alt="2 dogs on a bed together looking at the camera", class="large">
-            <section>
-                <h2>Luna</h2>
-                <p>
-                    This is Luna, a 3 year old husky. While thankfully she no longer destroys her bed while we are away from home (which to mention was hard to be mad at with how cute and innocent she was looking at me when I got home), she still has many husky like behaviors. She loves long walks, playing with dogs, and loves the snow!
-                </p>
-                    <img src="images/Luna_bed.jpg", alt = "Husky laying on a bed ripped to shreds looking innocently at the camera", class="large">
-            </section>
-            <section>
-                <h2>Suvi</h2>
-                <p>
-                    Here is Suvi! Her name is short for Vesuvius, you know the mountain that destroyed pompeii about 2000 years ago. At just about 1.5 years, she is a pomeranian husky mix (pomsky) who loves to tug just like a full husky. She loves running around in circles when possible, along with long walks and hikes. She also enjoys ripping all sorts of things, but luckly we were able to teach her to leave our furniture alone.
-                </p>
-                <img src="images/Suvi_hikeHop.jpg", alt="Small pomsky on a hiking trail on two legs looking at the camera." class="large">
-            </section>
-            <section>
-                <p>Fortunately for us they get a long great! They even love singing together! </p>
-                <iframe src="images/Howling Dogs.mp4", alt="2 dogs howling like they are on fire"></iframe></section>
-        </main>
+                <li><a href="contact.html">Contact Me</a></li> -->
+        </ul>
+    </nav>
+    <main>
+        <h1>Say hello to Luna and Suvi!</h1>
+        <img src="Images/Suvi_Luna.jpg" , alt="2 dogs on a bed together looking at the camera" , class="large">
+        <section>
+            <h2>Luna</h2>
+            <p>
+                This is Luna, a 3 year old husky. While thankfully she no longer destroys her bed while we are away from
+                home (which to mention was hard to be mad at with how cute and innocent she was looking at me when I got
+                home), she still has many husky like behaviors. She loves long walks, playing with dogs, and loves the
+                snow!
+            </p>
+            <img src="images/Luna_bed.jpg" ,
+                alt="Husky laying on a bed ripped to shreds looking innocently at the camera" , class="large">
+        </section>
+        <section>
+            <h2>Suvi</h2>
+            <p>
+                Here is Suvi! Her name is short for Vesuvius, you know the mountain that destroyed pompeii about 2000
+                years ago. At just about 1.5 years, she is a pomeranian husky mix (pomsky) who loves to tug just like a
+                full husky. She loves running around in circles when possible, along with long walks and hikes. She also
+                enjoys ripping all sorts of things, but luckly we were able to teach her to leave our furniture alone.
+            </p>
+            <img src="images/Suvi_hikeHop.jpg" , alt="Small pomsky on a hiking trail on two legs looking at the camera."
+                class="large">
+        </section>
+        <!-- <section>
+            <p>Fortunately for us they get a long great! They even love singing together! </p>
+            <iframe src="images/Howling Dogs.mp4" , alt="2 dogs howling like they are on fire"></iframe>
+        </section> -->
+    </main>
     <footer>
-            <nav>
-                <ul> Other pages:
-                    <li><a href="index.html">Home Page</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="hobbies.html">Hobbies Page</a></li>
-                    <li><a href="bio.html">Bio</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
-        </footer>
-    </body>
+        <nav class="navBar">
+            <ul> Other pages:
+                <li v-for="item in items">
+                    <a href={{ item.link }}>{{ item.text }}</a>
+                </li>
+                <!-- <li><a href="index.html">Home Page</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="hobbies.html">Hobbies Page</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="contact.html">Contact Me</a></li> -->
+            </ul>
+        </nav>
+    </footer>
+</body>
+
 </html>
