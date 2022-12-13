@@ -148,7 +148,9 @@ main {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: lightgray;
+  background-color: #e3e2e1;
+  border: solid;
+  padding: 1vw;
   opacity: 0.9;
 }
 
@@ -176,7 +178,6 @@ h1,
 h2,
 p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: green;
 }
 
 h1 {
