@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My dogs!</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js" type="module"></script>
+</head>
+
+<body>
+    <nav id="navBar">
+        <ul>
+            <li class="navItem" v-for="item in items">
+                <a :href="item.link">{{ item.text }}</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <p>
+                nickolas438@gmail.com<br>
+                NICKOLAS A. CRUZ<br>
+            
+                <ul>
+                   <li>BA in Psychology and Brain Sciences with a minor in Philosophy</li>
+                   <li>Preliminary teaching license in grades 5-12 History</li>
+                   <li>Fluent in reading, writing and speaking Portuguese</li>
+                   <li>Experience with Java, Python, HTML, CSS, JavaScript programming languages</li>
+                </ul>
+                Education
+                <ul>
+                    <li>BOSTON UNIVERSITY, Boston, MA
+                    BA in Psychology with a minor in Philosophy, 2015. </li>
+                    <li>BOSTON UNIVERSITY, Boston MA
+                    MA in Computer Science, Pending</li>  
+                </ul>
+                
+                WORK HISTORY<br>
+                MENTAL HEALTH SPECIALIST Franciscan Children�s (2018-Current)
+                <ul>
+                    <li>Assist in medical treatment plan of children ages 4 � 14</li>
+                    <li>Teach children appropriate social interactions and coping skills when they are angry or upset</li>
+                    <li>Assisting children who present suicidal ideation and self-harming behaviors by teaching them various
+                    coping skills which enable them to keep themselves safe </li>
+                </ul>
+            </p>
+
+        </section>
+    </main>
+    <footer>
+        Copyright &copy; <script>document.write(new Date().getFullYear())</script>
+    </footer>
+</body>
+
+</html>

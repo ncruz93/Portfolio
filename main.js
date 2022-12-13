@@ -9,6 +9,7 @@ createApp({
             { text: 'Hobbies Page', link: "hobbies.html" },
             { text: 'Gallery', link:"gallery.html"},
             { text: 'Bio', link:"bio.html"},
+            { text: 'resume', link:"resume.html"},
             { text: 'Contact Me', link:"contact.html"},
         ]
         }

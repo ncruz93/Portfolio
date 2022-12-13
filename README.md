@@ -1,1 +1,2 @@
 # Portfolio
+The goal of my project was to create a portfolio that explained bit about who I was, along with showing some of the things I have learned and what I have done. I was able to put together a webpage using html, css, javascript, vue, and many more things to give everyone an easy to navigate and comprehensive website. 
