@@ -1,97 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>My hobbies</title>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <script src="main.js" type="module"></script>
-    </head>
-    <body>
-        <nav id="navBar">
-            <ul>
-                <li class="navItem" v-for="item in items">
-                    <a :href="item.link">{{ item.text }}</a>
-                </li>
-            </ul>
-        </nav> 
-        <main>
-           <section>
-                <h1>Here is a better look at my hobbies!</h1>
-                <h2>Basketball</h2>
-                <p>I love basketball and my favorite team is the Boston Celtics. I was very fortunate to be able to go to the TD Garden to watch the 3rd game of the NBA finals live! You can learn more about the Celtics and other NBA teams <a href="https://www.nba.com/">here.</a>
-                </p>
-                <h2>Hiking & Travel</h2>
-                <p> I decided to do hiking and travel under one category as they overlap a fair amount. Here is a table to show where I've been somewhere, along with when and how long!</p>
-                <table>
-                    <thread>
-                        <tr>
-                            <th>PLACE:</th>
-                            <th>MONTH:</th>
-                            <th>TIME SPENT:</th>
-                        </tr>
-                    </thread>
-                    <tbody>
-                        <tr>
-                            <td>Hawaii</td>
-                            <td>February</td>
-                            <td>1 week</td>
-                        </tr>
-                        <tr>
-                            <td>Florida</td>
-                            <td>June</td>
-                            <td>1 week</td>
-                        </tr>
-                        <tr>
-                            <td>Puerto Rico</td>
-                            <td>August</td>
-                            <td>2 weeks </td>
-                        </tr>
-                        <tr>
-                            <td>Maine</td>
-                            <td>September</td>
-                            <td>3 days</td>
-                        </tr>
-                        <tr>
-                            <td>DC</td>
-                            <td>November</td>
-                            <td>5 days</td>
-                        </tr>
-                    </tbody>
-                    
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My hobbies</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js" type="module"></script>
+</head>
 
-                </table>
-           
-                <p>I will put my favorite places in order below:</p>
-                <ol>
-                    <li>Hawaii</li>
-                    <li>Puerto Rico</li>
-                    <li>Maine</li>
-                    <li>DC</li>
-                    <li>Florida</li>
-                </ol> 
-            </section>
-            <section>
-                <p>So I have been around a fair amount this last year. I still have one more stop to make on a cruise before it's over, but other than that I may as well give you a brief discription of the places I've been. I'll go in order of least favorite to favorite.</p>
-                <h5>5. Florida</h5>
-                <p>Okay, so I know that saying Florida was my least favorite place to go to is almost sacrilegious, but hear me out. I have been there half a dozen times due to family, and this trip doubled as part vacation, part agonizing 30 hour travel in a moving truck to help my brother move there from Boston. The weather was great though, and Universal was fun (as always)</p>
-                <h5>4. DC</h5>
-                <p>Going to DC was great. It was the first time I had ever been there, and there were so many free museums to go to. The weather was great (even though it was November), and there was almost too much to do. Unfortunately, while I was in the area for 5 days, I really only had 2 days to actually explore, leaving me wanting more. </p>
-                <h5>3. Maine</h5>
-                <p>Maine was fantastic for me. We were able to bring the dogs as the state is incredibly dog friendly, go on hikes, and even have the best milkshakes I have ever had at a place in Portland called Duckfat. It really was just refreshing to get out of the city and enjoy nature.</p>
-                <h5>2. Puerto Rico</h5>
-                <p>Stunning place, had the most beautiful beach I had ever been to, stunning mountains, and delicious Pina Coladas (which apparently originate from there). The only thing I wish there was more of was diversity of food. Everything was pretty much the same everywhere you went, which can get tiring after a while.</p>
-                <h5>1. Hawaii</h5>
-                <p>They call it paridise for a reason. Perfect weather, rainforest, mountains, beaches, culture, history, snorkeling, ziplining, luaus. I can't name something that I didn't love while there. On the plane back I was already wondering when I would visit again.</p>
-            </section>
-            <p>Check out the <a href="gallery.html">gallery</a> for more pictures!</p>
-            <img src="images/Maui_Sunrise.jpg", alt="Sunrise over a mountain" class="large">      
-        </main>
-        <footer>
-            Copyright &copy; <script>document.write(new Date().getFullYear())</script>
-        </footer>
-    </body>
-    
+<body>
+    <nav id="navBar">
+        <ul>
+            <li class="navItem" v-for="item in items">
+                <a :href="item.link">{{ item.text }}</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Here is a better look at my hobbies!</h1>
+            <h2>Basketball</h2>
+            <p>I love basketball and my favorite team is the Boston Celtics. I was very fortunate to be able to go to
+                the TD Garden to watch the 3rd game of the NBA finals live! You can learn more about the Celtics and
+                other NBA teams <a href="https://www.nba.com/">here.</a>
+            </p>
+            <h2>Hiking & Travel</h2>
+            <p> I decided to do hiking and travel under one category as they overlap a fair amount. Here is a table to
+                show where I've been somewhere, along with when and how long!</p>
+            <table>
+                <thread>
+                    <tr>
+                        <th>PLACE:</th>
+                        <th>MONTH:</th>
+                        <th>TIME SPENT:</th>
+                    </tr>
+                </thread>
+                <tbody>
+                    <tr>
+                        <td>Hawaii</td>
+                        <td>February</td>
+                        <td>1 week</td>
+                    </tr>
+                    <tr>
+                        <td>Florida</td>
+                        <td>June</td>
+                        <td>1 week</td>
+                    </tr>
+                    <tr>
+                        <td>Puerto Rico</td>
+                        <td>August</td>
+                        <td>2 weeks </td>
+                    </tr>
+                    <tr>
+                        <td>Maine</td>
+                        <td>September</td>
+                        <td>3 days</td>
+                    </tr>
+                    <tr>
+                        <td>DC</td>
+                        <td>November</td>
+                        <td>5 days</td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+
+            <p>I will put my favorite places in order below:</p>
+            <ol>
+                <li>Hawaii</li>
+                <li>Puerto Rico</li>
+                <li>Maine</li>
+                <li>DC</li>
+                <li>Florida</li>
+            </ol>
+        </section>
+        <section>
+            <p>So I have been around a fair amount this last year. I still have one more stop to make on a cruise before
+                it's over, but other than that I may as well give you a brief discription of the places I've been. I'll
+                go in order of least favorite to favorite.</p>
+            <h3>5. Florida</h3>
+            <p>Okay, so I know that saying Florida was my least favorite place to go to is almost sacrilegious, but hear
+                me out. I have been there half a dozen times due to family, and this trip doubled as part vacation, part
+                agonizing 30 hour travel in a moving truck to help my brother move there from Boston. The weather was
+                great though, and Universal was fun (as always)</p>
+            <h3>4. DC</h3>
+            <p>Going to DC was great. It was the first time I had ever been there, and there were so many free museums
+                to go to. The weather was great (even though it was November), and there was almost too much to do.
+                Unfortunately, while I was in the area for 5 days, I really only had 2 days to actually explore, leaving
+                me wanting more. </p>
+            <h3>3. Maine</h3>
+            <p>Maine was fantastic for me. We were able to bring the dogs as the state is incredibly dog friendly, go on
+                hikes, and even have the best milkshakes I have ever had at a place in Portland called Duckfat. It
+                really was just refreshing to get out of the city and enjoy nature.</p>
+            <h3>2. Puerto Rico</h3>
+            <p>Stunning place, had the most beautiful beach I had ever been to, stunning mountains, and delicious Pina
+                Coladas (which apparently originate from there). The only thing I wish there was more of was diversity
+                of food. Everything was pretty much the same everywhere you went, which can get tiring after a while.
+            </p>
+            <h3>1. Hawaii</h3>
+            <p>They call it paridise for a reason. Perfect weather, rainforest, mountains, beaches, culture, history,
+                snorkeling, ziplining, luaus. I can't name something that I didn't love while there. On the plane back I
+                was already wondering when I would visit again.</p>
+        </section>
+        <p>Check out the <a href="gallery.html">gallery</a> for more pictures!</p>
+        <img src="images/Maui_Sunrise.jpg" , alt="Sunrise over a mountain" class="large">
+    </main>
+    <footer>
+        Copyright &copy;
+        <script>document.write(new Date().getFullYear())</script>
+    </footer>
+</body>
+
 </html>
