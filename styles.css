@@ -110,7 +110,8 @@ body {
   justify-content: space-between;
   flex-direction: column;
   margin: 0 10vw;
-  background: antiquewhite
+  background: antiquewhite;
+  min-height: 100vh;
 }
 
 img {
