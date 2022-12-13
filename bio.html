@@ -5,18 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Bio</title>
-        
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="main.js" type="module"></script>
     </head>
     <body>
-        <nav>
+        <nav class="navBar">
             <ul> Other pages:
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="dogs.html">Dog Page</a></li>
-                <li><a href="hobbies.html">Hobbies Page</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li v-for="item in items">
+                    <a :href="item.link">{{ item.text }}</a>
+                </li>
             </ul>
-        </nav> 
+        </nav>
         <main>
             <h1>Bio</h1>
             <h3>Early life</h3>
@@ -25,15 +24,7 @@
             <p>I completed a Bachelors of Arts in Psychology at Boston University in 2015. I then worked in the mental health field with children in hostpitals. This was both a rewarding, yet at times tiring career path. I primarily worked with children and teenagers with a conglomeration of mental health disorders, truama, or suicidal ideation. After some time, I began to feel fatigue within the field of Psychology and decided to persue a career change, which led me to computer science.</p>
         </main>
         <footer>
-            <nav>
-                <ul> Other pages:
-                    <li><a href="index.html">Home Page</a></li>
-                    <li><a href="dogs.html">Dogs Page</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="hobbies.html">Hobbies Page</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
-         </footer>
+            Copyright &copy; <script>document.write(new Date().getFullYear())</script>
+        </footer>
     </body>
 </html>    

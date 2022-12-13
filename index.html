@@ -5,18 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>About me</title>
-        
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="main.js" type="module"></script>
     </head>
     <body>
-        <nav>
+        <nav class="navBar">
             <ul> Other pages:
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="dogs.html">Dog Page</a></li>
-                <li><a href="hobbies.html">Hobbies Page</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li v-for="item in items">
+                    <a :href="item.link">{{ item.text }}</a>
+                </li>
             </ul>
-        </nav> 
+        </nav>
 
         <main> 
         
@@ -35,15 +34,7 @@
         </main>  
 
         <footer>
-            <nav>
-                <ul> Other pages:
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="dogs.html">Dog Page</a></li>
-                    <li><a href="hobbies.html">Hobbies Page</a></li>
-                    <li><a href="bio.html">Bio</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
+            Copyright &copy; <script>document.write(new Date().getFullYear())</script>
         </footer>
     </body>
     

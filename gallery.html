@@ -5,16 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Gallery</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
-        
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="main.js" type="module"></script>
     </head>
     <body>
-        <nav>
+        <nav class="navBar">
             <ul> Other pages:
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="dogs.html">Dog Page</a></li>
-                <li><a href="hobbies.html">Hobbies Page</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li v-for="item in items">
+                    <a :href="item.link">{{ item.text }}</a>
+                </li>
             </ul>
         </nav> 
         <h1>Gallery</h1>
@@ -33,14 +32,9 @@
             <img src="Images/Suvi_Luna.jpg", alt="2 dogs on a bed together looking at the camera", class="large">
             <img src="images/Suvi_hikeHop.jpg", alt="Small pomsky on a hiking trail on two legs looking at the camera." class="large">
         </section>
-        <nav>
-            <ul> Other pages:
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="dogs.html">Dog Page</a></li>
-                <li><a href="hobbies.html">Hobbies Page</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+        <footer>
+            Copyright &copy; <script>document.write(new Date().getFullYear())</script>
+        </footer>
     </body>
 </html>
         

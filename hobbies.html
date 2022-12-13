@@ -6,16 +6,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>My hobbies</title>
-       
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="main.js" type="module"></script>
     </head>
     <body>
-        <nav>
+        <nav class="navBar">
             <ul> Other pages:
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="dogs.html">Dog Page</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li v-for="item in items">
+                    <a :href="item.link">{{ item.text }}</a>
+                </li>
             </ul>
         </nav> 
         <main>
@@ -91,16 +90,8 @@
             <img src="images/Maui_Sunrise.jpg", alt="Sunrise over a mountain" class="large">      
         </main>
         <footer>
-            <nav>
-                <ul> Other pages:
-                    <li><a href="index.html">Home Page</a></li>
-                    <li><a href="dogs.html">Dog Page</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="bio.html">Bio</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
-         </footer>
+            Copyright &copy; <script>document.write(new Date().getFullYear())</script>
+        </footer>
     </body>
     
 </html>

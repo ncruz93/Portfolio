@@ -11,19 +11,11 @@
 </head>
 
 <body>
-    <div id="app" style="color: white">
-        HEY {{ message }}
-    </div>
-    <nav id="navBar">
+    <nav class="navBar">
         <ul> Other pages:
             <li v-for="item in items">
-                {{ item.link }}
+                <a :href="item.link">{{ item.text }}</a>
             </li>
-            <!-- <li><a href="index.html">Home Page</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="hobbies.html">Hobbies Page</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="contact.html">Contact Me</a></li> -->
         </ul>
     </nav>
     <main>
@@ -57,18 +49,7 @@
         </section> -->
     </main>
     <footer>
-        <nav class="navBar">
-            <ul> Other pages:
-                <li v-for="item in items">
-                    <a href={{ item.link }}>{{ item.text }}</a>
-                </li>
-                <!-- <li><a href="index.html">Home Page</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="hobbies.html">Hobbies Page</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="contact.html">Contact Me</a></li> -->
-            </ul>
-        </nav>
+        Copyright &copy; <script>document.write(new Date().getFullYear())</script>
     </footer>
 </body>
 
