@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="form.js"></script>
+</head>
+<body>
+<main>
+    <h2>Please input your name:</h2>
+
+    <form name="practiceForm" id="practiceForm" onsubmit="return validateForm()" action=https://cs601.bu-course-examples.com/hw4/380a98f5-5191-496f-8aa1-7acc1da83cc5 method="post">
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName" value="">
+        <p class="e1" id="e1">Please enter a valid first name.</p><br>
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName" value="">
+        <p class="e2" id="e2">Please enter a valid last name.</p><br>
+
+        <h2>Choose your favorite of these foods:</h2>
+        <input type="radio" id="pizza" name="food" value="pizza">
+        <label for="pizza">pizza</label>
+        <input type="radio" id="burrito" name="food" value="burrito">
+        <label for="burrito">burrito</label><br>
+        <input type="radio" id="sushi" name="food" value="sushi">
+        <label for="sushi">sushi</label>
+        <input type="radio" id="cheesecake" name="food" value="cheesecake">
+        <label for="cheesecake">cheesecake</label><br>
+
+        <h2>Create your perfect pizza:</h2>
+        <input type="checkbox" id="pepperoni" name="topping1" value="pepperoni">
+        <label for="topping1">pepperoni</label>
+        <input type="checkbox" id="pineapple" name="topping2" value="pineapple">
+        <label for="topping2">pineapple</label>
+        <input type="checkbox" id="bacon" name="topping3" value="bacon">
+        <label for="topping3">bacon</label><br>
+        <input type="checkbox" id="olives" name="topping4" value="olives">
+        <label for="topping4">olives</label>
+        <input type="checkbox" id="onion" name="topping5" value="onion">
+        <label for="topping5">onion</label>
+        <input type="checkbox" id="peppers" name="topping6" value="peppers">
+        <label for="topping6">peppers</label><br>
+        <input type="checkbox" id="mushroom" name="topping7" value="mushroom">
+        <label for="topping7">mushroom</label>
+        <input type="checkbox" id="sausage" name="topping8" value="sausage">
+        <label for="topping8">sausage</label>
+        <input type="checkbox" id="extracheese" name="topping9" value="extracheese">
+        <label for="topping9">extracheese</label><br>
+        
+        <input type="submit" value="submit">
+    </form>
+</main>
+</body>
+</html>
