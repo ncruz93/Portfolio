@@ -192,6 +192,7 @@ h1 {
 footer {
   display: flex;
   justify-content: center;
+  min-height: 10vh;
 }
 
 /* } */
