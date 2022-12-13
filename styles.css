@@ -1,4 +1,4 @@
-/*mobile phones*/
+/* mobile phones
 @media only screen and (max-width: 600px){
   body{
     display: flex;
@@ -64,7 +64,7 @@
 
 
 /* tablets */
-@media only screen and (min-width: 600px){
+/* @media only screen and (min-width: 600px){
   body{
     display: flex;
     align-items: flex-start;
@@ -97,13 +97,13 @@
   ul{
     color: beige;
   }
-}
+} */ */
 
 
 
 /* desktops */
 
-@media only screen and (min-width: 992px){
+/* @media only screen and (min-width: 992px){ */
   body{
     display: flex;
     align-items: center;
@@ -181,13 +181,25 @@
   h1{
     font-style: italic;
   }
-}
+  .navItem {
+    display: inline;
+    padding: 1vw;
+    }
+    .navBar {
+      display: flex;
+      justify-content: space-around;
+    }
+    footer{
+      display:flex;
+      justify-content: center;
+    }
+/* } */
 
 /*I focused on making the print page a bit simpler as someone might want less color on the page to save
 ink. In addition, I made it so that sections and pictures would stay on a page together to make each page
 easy to read and understand, as well as having pictures stay together.
 Furthermore, I set the nav to be hidden as a nav bar is not needed on a print page.*/
-@media print{
+/* @media print{
   body{
     display: block;
     margin: 0 10vw;
@@ -245,4 +257,4 @@ Furthermore, I set the nav to be hidden as a nav bar is not needed on a print pa
     visibility: hidden;
   }
 }
-
+ */
